@@ -1,0 +1,17 @@
+# air.toml
+
+# List of folders/files to watch for changes
+[build]
+# If your project is structured differently, adjust this accordingly
+folders = ["."]
+
+# Auto-reload when these file extensions change
+include = ["*.go", "*.tpl", "*.tmpl", "*.html"]
+
+# Exclude files from auto-reloading
+exclude = ["./assets/*", "./tmp/*"]
+
+# Entry point for your application
+[run]
+command = "go"
+args = ["run", "main.go"]  # Replace with your main Go file
